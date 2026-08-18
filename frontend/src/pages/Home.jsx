@@ -4,10 +4,10 @@ import { useAxios } from "../hooks/useAxios";
 import Hero from "./Hero";
 import Products from "./Products";
 
+
 export const Home = () => {
   const { dispatch } = useCart();
-  const { auth } = useAuth();
-  const accessToken = auth?.accessToken;
+  
 
   const { api } = useAxios();
 
